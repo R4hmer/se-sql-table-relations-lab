@@ -12,7 +12,7 @@ pd.read_sql("""SELECT * FROM sqlite_master""", conn)
 # STEP 1
 # Replace None with your code
 df_boston = pd.read_sql("""
-SELECT employees.firstName, employees.lastName, employees.jobTitle
+SELECT employees.firstName, employees.lastName
 FROM employees
 JOIN offices ON employees.officeCode = offices.officeCode
 WHERE offices.city = 'Boston'
